@@ -1,2 +1,3 @@
 # STAT532stuff
-Fall 2015 STAT 532 documents
+
+In Fall 2015 using this as a place to practice using git
