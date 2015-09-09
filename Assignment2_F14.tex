@@ -1,0 +1,81 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{hyperref}
+\usepackage{fancybox}
+\usepackage[centertags]{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{epsfig}
+\usepackage{newlfont}
+
+\setlength{\textwidth}{6.3in} \setlength{\textheight}{8.5in}
+\setlength{\oddsidemargin}{0in} \setlength{\evensidemargin}{0in}
+\setlength{\topmargin}{-1cm}
+\newcommand{\sptwo}{\def\baselinestretch{2.0} \large\normalsize}
+\newcommand{\spone}{\def\baselinestretch{1} \large\normalsize}
+
+% MATH -----------------------------------------------------------
+\def\beq{\begin{equation}}
+\def\eeq{\end{equation}}
+\def\ben{\begin{enumerate}}
+\def\een{\end{enumerate}}
+\def\bit{\begin{itemize}}
+\def\eit{\end{itemize}}
+\def\bdm{\begin{displaymath}}
+\def\edm{\end{displaymath}}
+\newcommand{\norm}[1]{\left\Vert#1\right\Vert}
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\Real}{\mathbb R}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\To}{\longrightarrow}
+\newcommand{\BX}{\mathbf{B}(X)}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\F}{\mathcal{F}}
+
+\begin{document}
+\begin{center}
+\bfseries\Large STAT 532 Assignment 2\\
+  Due: Friday, Sept. 11th by 4:00
+\end{center}
+\vspace{0.25cm}
+
+
+\noindent Show all work {\bf neatly} for full credit and only include computer code and output that is necessary to completely answer a question.  Other well organized code and output can be included in the appendix so I can check your work and provide comments if needed.  In other words, I do not want to have to search through code and output to find the pertinent parts of your ``answer."  Any plots should appear with the corresponding exercise solution so that I do not have to search through your homework to find them.
+
+\vspace{0.5cm}
+
+\noindent NOTE:  I expect that you will not refer to the solutions of previous students or found on-line until after assignments are completed and handed in.
+
+\begin{enumerate}
+  
+  \item (12 pts) Use R to plot the likelihood function associated with the following scenarios.  You can use the given form/distribution for the likelihood function, but assume you do not know the parameters of the distribution.  In other words, you are trying to use the simulated data to learn about the parameters of these distributions (even though in reality you know the parameter values that generated the data).  Calculate usual summary measures, add vertical lines to your plots showing the truth and the MLE, and describe it in words and comment on interesting features, whether expected or unexpected.
+     \begin{enumerate}
+        \item One realization of 20 observations from a $Poisson(\lambda=5)$ distribution
+        \item One realization of 15 observations from a $N(\mu=10, \sigma^{2}=5)$ distribution
+				\item One realization of 1 observations from a $Binomial(m=100, p=0.2)$ distribution (where $m$ is known)
+     \end{enumerate}
+  
+  \item (4 pts) Exercise 1.1
+  \item (4 pts) Exercise 1.6
+  \item (4 pts) Exercise 1.8
+  \item (6 pts) Exercise 1.9 (This is a fun one to get started with a little programming.  Be sure to do a nice job formatting and commenting your code.  I do want you to hand in your script file for this part, as well as a few interesting and informative plots (you can choose what they are).
+  \item (6 pts) Explain (to another student in the class) what a sampling distribution is in the context of a typical likelihood analysis.  You can use pictures and words.
+  \end{enumerate}
+  
+\vspace{1cm}
+
+Also, be working on the following (there is nothing to hand in for this, but you should spend a little time on it):
+  \begin{itemize}
+  \item Download the JAGS software and the R package \verb^R2jags^ from CRAN
+  \item and/or Download OpenBUGS software and the R package \verb^R2OpenBUGS^ from CRAN
+	\item Download Stan software (see Appendix C in BDA3.  Michael Lerch will be giving an introduction to Stan on Wed. Sept 10th so be sure to have it on your computer before then and bring your laptop to class (or be ready to use the computers in 1-144)).
+  \item Start trying to run the ``schools"' example described in both JAGS and Stan.
+  
+\end{itemize}
+
+
+\end{document}
